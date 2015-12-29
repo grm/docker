@@ -30,7 +30,7 @@ RUN apt-get update
 RUN apt-get install -y --force-yes subversion supervisor php5 php5-curl apache2 openssl php-pear php5-mysql php5-curl php5-gd mysql-server-5.5 unrar-free libav-tools mediainfo
 
 # MySQL
-RUN sed -i "s/max_allowed_packet      = 16M/max_allowed_packet      = 12582912/" /etc/mysql/my.cnf 
+#RUN sed -i "s/max_allowed_packet      = 16M/max_allowed_packet      = 12582912/" /etc/mysql/my.cnf 
 
 # PHP
 RUN sed -i "s/max_execution_time = 30/max_execution_time = 120/" /etc/php5/cli/php.ini  && \
