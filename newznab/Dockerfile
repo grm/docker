@@ -19,7 +19,7 @@ EXPOSE 3306
 EXPOSE 80
 
 # volumes
-VOLUME /var/lib/mysql//var/www/newznab/nzbfiles/ /var/www/newznab/covers/
+VOLUME /var/lib/mysql/ /var/www/newznab/nzbfiles/ /var/www/newznab/covers/
 
 RUN locale-gen en_US.UTF-8
 
